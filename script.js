@@ -43,46 +43,30 @@ let weather = {
 
       //weather forecast
       
-      const{icon1} = data.list[1].weather[0].icon;
-      const{temp1} = data.list[1].main.temp;
-      const{datetime1} = data.list[1].dt_txt;
-      const{icon2} = data.list[2].weather[0];
-      const{temp2} = data.list[2].main;
-      const{datetime2} = data.list[2].dt_txt;
-      const{icon3} = data.list[3].weather[0];
-      const{temp3} = data.list[3].main;
-      const{datetime3} = data.list[3].dt_txt;
-      const{icon4} = data.list[4].weather[0];
-      const{temp4} = data.list[4].main;
-      const{datetime4} = data.list[4].dt_txt;
-      const{icon5} = data.list[5].weather[0];
-      const{temp5} = data.list[5].main;
-      const{datetime5} = data.list[5].dt_txt;
-      
       document.querySelector(".icon1").src =
-        "https://openweathermap.org/img/wn/" + icon1 + ".png";
-      document.querySelector(".temp1").innerText = temp1 + "°C";
-      document.querySelector(".dt1").innerText = datetime1;
+        "https://openweathermap.org/img/wn/" + data.list[3].weather[0].icon + ".png";
+      document.querySelector(".temp1").innerText = data.list[1].main.temp + "°C";
+      document.querySelector(".dt1").innerText = data.list[3].dt_txt;
 
       document.querySelector(".icon2").src =
-        "https://openweathermap.org/img/wn/" + icon2 + ".png";
-      document.querySelector(".temp2").innerText = temp2 + "°C";
-      document.querySelector(".dt2").innerText = datetime2;
+        "https://openweathermap.org/img/wn/" + data.list[6].weather[0].icon + ".png";
+      document.querySelector(".temp2").innerText = data.list[6].main.temp + "°C";
+      document.querySelector(".dt2").innerText = data.list[6].dt_txt;
 
       document.querySelector(".icon3").src =
-        "https://openweathermap.org/img/wn/" + icon3 + ".png";
-      document.querySelector(".temp3").innerText = temp3 + "°C";
-      document.querySelector(".dt3").innerText = datetime3;
+        "https://openweathermap.org/img/wn/" + data.list[9].weather[0].icon + ".png";
+      document.querySelector(".temp3").innerText = data.list[9].main.temp + "°C";
+      document.querySelector(".dt3").innerText = data.list[9].dt_txt;
 
       document.querySelector(".icon4").src =
-        "https://openweathermap.org/img/wn/" + icon4 + ".png";
-      document.querySelector(".temp4").innerText = temp4 + "°C";
-      document.querySelector(".dt4").innerText = datetime4;
+        "https://openweathermap.org/img/wn/" + data.list[12].weather[0].icon + ".png";
+      document.querySelector(".temp4").innerText = data.list[12].main.temp + "°C";
+      document.querySelector(".dt4").innerText = data.list[12].dt_txt;
 
       document.querySelector(".icon5").src =
-        "https://openweathermap.org/img/wn/" + icon5 + ".png";
-      document.querySelector(".temp5").innerText = temp5 + "°C";
-      document.querySelector(".dt5").innerText = datetime5;
+        "https://openweathermap.org/img/wn/" + data.list[15].weather[0].icon + ".png";
+      document.querySelector(".temp5").innerText = data.list[15].main.temp + "°C";
+      document.querySelector(".dt5").innerText = data.list[15].dt_txt;
       
       // 
     },

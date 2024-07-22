@@ -122,10 +122,10 @@ body {
     align-items: center;
     height: 70vh;
     margin: 0; 
-    background-color: red;
+    /* background-color: red; */
 }
 .bottomcard{
-  background-color: blue;
+  /* background-color: blue; */
   height: 30vh;
   width: auto;
   display: flex;
@@ -155,8 +155,17 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0em 1em ;
+  padding: 1%;
   width: 25%;
-  height: 70px;
-  background-color: greenyellow;
+  height: auto;
+  background-color: rgba(50, 50, 50, 0.404);
+  flex-direction: column;
 
+}
+.box img{
+  width: 60px;
+  height: 60px;
+}
+.ddt{
+  font-size: 12px;
 }

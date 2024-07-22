@@ -1,11 +1,7 @@
 
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0; 
+    
     font-family: 'Open Sans', sans-serif;
     background: #222;
     background: url('./media/bg.mp4');
@@ -34,6 +30,16 @@ body {
     max-width: 420px;
     margin: 1em;
   }
+  .card2{
+    /* background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px; */
+    width: 100%;
+    max-width:fit-content;
+    margin: 1em;
+  }
+  
   
   .search {
     display: flex;
@@ -103,49 +109,54 @@ body {
     top: 0;
     left: 20px;
   }
-
-
-  /* dynamic bg */
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  .dt{
+    font-size: xx-small;
   }
-  
-  .gradient {
-    --size: 750px;
-    --speed: 50s;
-    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-  
-    width: var(--size);
-    height: var(--size);
-    filter: blur(calc(var(--size) / 5));
-    background-image: linear-gradient(hsl(222, 84, 60, 100%), hsl(164, 79, 71));
-    animation: rotate var(--speed) var(--easing) alternate infinite;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  .card h5, .card3 h5{
+    color: rgb(120, 119, 119);
+    margin: -1em 0em 1em;
   }
-  
-  @media (min-width: 720px) {
-    .gradient {
-      --size: 500px;
-    }
-  }
-  
-  body {
-    background-color: #071c39;
-    position: absolute;
-    inset: 0;
-    display: flex;
-    place-content: center;
+.topcard{
+  display: flex;
+    justify-content:center;
     align-items: center;
-    overflow: hidden;
-  }
-  
-  /* This is just to transition when you change the viewport size. */
-  * {
-    transition: all 0.5s ease-out;
-  }
-  
+    height: 70vh;
+    margin: 0; 
+    background-color: red;
+}
+.bottomcard{
+  background-color: blue;
+  height: 30vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.card3{
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  /* max-width:fit-content; */
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+
+}
+.boxes{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0em 1em ;
+  width: 25%;
+  height: 70px;
+  background-color: greenyellow;
+
+}

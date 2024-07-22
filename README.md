@@ -1,6 +1,6 @@
 # Weather Data Retrieval and Analysis System
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/ff0feafe-03b0-47c5-a5f3-ec1bd39341e6">
-
+live sever: https://santosh-2003-sahoo.github.io/App2-Weather-app/
 ## Overview
 
 This project is designed to retrieve weather data from the OpenWeatherMap API at configurable intervals, convert temperature values based on user preference, and provide daily weather summaries including additional parameters like humidity and wind speed. The system is built to be robust, easy to set up, and extendable.

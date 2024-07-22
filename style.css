@@ -169,3 +169,16 @@ body {
 .ddt{
   font-size: 12px;
 }
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  width: 60px;
+  height: 30px;
+  /* overflow: hidden; */
+}
+
+#dropkey{
+ width: 100%; 
+ height: 100%;
+}

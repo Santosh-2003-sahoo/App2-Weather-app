@@ -1,0 +1,151 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background: url('./media/bg.mp4');
+    font-size: 120%;
+  }
+
+  #bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: contain;
+    object-fit: contain;
+  }
+  
+  .card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% - 100px);
+  }
+  
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  
+  h1.temp , h1.temp-feels-like{
+    margin: 0;
+    margin-bottom: 0.4em;
+    font-size: 20px;
+  }
+  h1.temp-feels-like{
+    font-size: 16px;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+
+  /* dynamic bg */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .gradient {
+    --size: 750px;
+    --speed: 50s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(hsl(222, 84, 60, 100%), hsl(164, 79, 71));
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  
+  @media (min-width: 720px) {
+    .gradient {
+      --size: 500px;
+    }
+  }
+  
+  body {
+    background-color: #071c39;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* This is just to transition when you change the viewport size. */
+  * {
+    transition: all 0.5s ease-out;
+  }
+  

@@ -182,8 +182,10 @@ body {
 }
 
 .dropkey{
-  width: 100px;
-  height: 30px;
+  font-size:medium;
+  /* display: contents; */
+  width: 200%;
+  height: 100%;
   border-radius: 6px;
   background-color: #000000d0;
   color: white;

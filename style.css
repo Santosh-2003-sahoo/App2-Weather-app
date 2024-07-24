@@ -121,7 +121,8 @@ body {
     justify-content:center;
     align-items: center;
     height: 70vh;
-    margin: 0; 
+    margin-top: -55px; 
+
     /* background-color: red; */
 }
 .bottomcard{
@@ -171,14 +172,20 @@ body {
 }
 
 /* Dropdown container - needed to position the dropdown content */
-.dropdown {
+#dropdown {
   float: left;
   width: 60px;
-  height: 30px;
+  height: 50px;
   /* overflow: hidden; */
+  position: fixed;
+  
 }
 
-#dropkey{
- width: 100%; 
- height: 100%;
+.dropkey{
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: #000000d0;
+  color: white;
+  border: none;
 }

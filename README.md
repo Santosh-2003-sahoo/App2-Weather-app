@@ -1,8 +1,8 @@
 # Weather Data Retrieval and Analysis System
+
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/2c4fc70a-9633-485e-a3d6-aef57359b81a">
 
-
-live sever: https://santosh-2003-sahoo.github.io/App2-Weather-app/
+Hosted link: https://santosh-2003-sahoo.github.io/App2-Weather-app/
 
 
 ## Overview
@@ -25,13 +25,39 @@ This project is designed to retrieve weather data from the OpenWeatherMap API at
 - **Extensibility:** Designed to easily incorporate additional weather parameters from the OpenWeatherMap API.
 
 ## Requirements
-Screen 1070*680 minimum
-Nodejs (optional in case system do not have live server utility)
+- Screen 1070*680 minimum
+- Nodejs (optional in case system do not have live server utility)
 
-## Setup Instructions
+## Getting Started
 
-1. Clone the Repository
-2. cd App2-Weather-app
-3. Now run these commands in your terminal or run live server
+### Prerequisites
+
+- Node.js and npm installed
+
+### Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone "https://github.com/Santosh-2003-sahoo/App2-Weather-app.git"
+   cd App2-Weather-app
+   ```
+
+2. **Install Backend Dependencies**
+
+   ```bash
+   npm install
+   
+   ```
+   
+3. **run live server
+
+   ```bash
    npm install http-server -g
-   http-server -p 8080
+   http-server -p 8080**
+   ```
+
+## Running Tests
+
+You can add and run tests to ensure everything is working correctly.
+```
+created bt: santosh sahoo
